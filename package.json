@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
   "scripts": {
     "test": "jest --watchAll"
   },
@@ -11,7 +16,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
     "@types/jest": "^29.4.0",
+    "babel-jest": "^29.4.1",
     "jest": "^29.4.1"
   }
 }
